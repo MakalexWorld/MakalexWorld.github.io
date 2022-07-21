@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title> Алексей Макаренко - учитель математики и информатики</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header>
@@ -22,129 +24,193 @@
     <div class="main">
         <div class="titel_container">
             <h1> Привет <br> Я - Алексей Макаренко</h1>
-            <h4> Lorem ipsum.</h4>
+            <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
         </div>
     </div>
     
     <div class="about_myself">
-        <h2>Обо мне</h2>
-        <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, ad.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, delectus.</p>
-        <a href=""></a>
+            <h2>Обо мне</h2>
+            <hr>
+            <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+                <div class="about_myself_container">
+                    <img class =round_photo src="Img/round_boy.jpg" alt="Что-то пошло не так">
+                    <p class="first_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, vel voluptates earum impedit, magnam dolor hic, amet eius esse asperiores perferendis facilis sequi obcaecati provident aspernatur dolores! Ipsa odio aspernatur perspiciatis consectetur rem obcaecati nostrum reprehenderit, ratione, laborum itaque blanditiis. Voluptate, corporis, explicabo. Sequi, recusandae nihil assumenda culpa est facilis. </p>
+                    <p class="second_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolore non reprehenderit, molestiae explicabo ipsa architecto incidunt, dolorum impedit voluptatum fugit quo quia nihil odit quisquam illo deleniti esse quas a aut nulla. Hic tempora deleniti voluptate aliquam eaque corporis. </p>
+                    <a href="#">Скачать резюме</a>     
+        </div>
     </div>
-    
     <div class="my_skills">
+       <hr>
         <h2>Что я умею</h2> 
-        <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+        <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
  
 
         <div class="skill_one">
             <img src="Img/НОУТ.png" alt="Что-то пошло не так">
             <h4>Веб-дизайн</h4>
-            <p>Lorem ipsum dolor sit amet.</p>    
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, blanditiis.</p>    
         </div>
          
         <div class="skill_two">
             <img src="Img/знак.png" alt="Что-то пошло не так">
             <h4>Разработка</h4>
-            <p>Lorem ipsum dolor sit amet.</p> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, blanditiis.</p> 
         </div>
         
         <div class="skill_three">
             <img src="Img/ракета.png" alt="Что-то пошло не так"> 
             <h4>CEO-Оптимизация</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatibus necessitatibus consectetur, error, voluptatem ab impedit!</p>
         </div>
         
         <div class="skill_four">
             <img src="Img/граммофон.png" alt="Что-то пошло не так">
             <h4>Маркетинг</h4>
-            <p>Lorem ipsum dolor sit amet.</p>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, nam.</p>  
         </div>
+        <div class="clear"></div>
     </div>
     
-    <div class="case">
+    <div class="case"><!-- я пока не оформляю до конца этот блок, так как ещё не рассматривался материал относительно написания кода для него --> 
         <h2>Кейсы</h2>
-        <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">
-
-        <p>Lorem ipsum dolor sit amet.</p>
+        <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, laborum.</p>
         <img src="" alt="">
            
             <div class="client">
-                <h3>CLIENT</h3>
+                <h3>CLIENT:</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             
             <div class="website">
-                <h3>WEBSITE</h3>
+                <h3>WEBSITE:</h3>
                 <a href=""></a>
             </div>
             
             <div class="about_project">
-                <h3>Название проекта</h3>
+                <h3>Название проекта:</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem perferendis repellat id alias ab non velit, sit quasi quibusdam nam!</p>
             </div>
     </div>
     
     <div class="calculator">
-       <h2>РАСЧЁТ СТОИМОСТИ</h2>
-           <h3>ТИП САЙТА</h3>
-               <select name="" id=""></select>
-           <h3>ДИЗАЙН</h3>
-               <select name="" id=""></select>
-           <h3>АДАПТИВНОСТЬ</h3> 
-               <select name="" id=""></select>
-       
-       <img src="" alt="">
-          
-        <div class="itog">
-             <p>Сроки</p>
-             <p>0</p>
-             <p>Стоимость</p>
-             <p>0</p>  
+       <h2>Расчет стоимости</h2>
+         <div class="calculator_item">
+            <h3>Тип Сайта</h3>
+            <select class="Select" name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Сайт-визитка</option>
+                <option value="3">Корпоративный сайт</option>
+                <option value="4">Интернет-магазин</option>
+            </select>
+            <h3>Дизайн</h3>
+            <select class="Select" name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Шаблонный</option>
+                <option value="3">Уникальный</option>
+                <option value="4">WOW-Дизайн</option>
+            </select>
+            <h3>Адаптивность</h3>
+            <select class="Select" name="type" id="typeSite">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">Только ПК</option>
+                <option value="3">Только мобильный сайт</option>
+                <option value="4">ПК + Мобильный</option>
+            </select>
+            <hr>
+            <img src="Img/itog.png" alt="">
+            <div class="calculator_footer">
+                <div class="days">
+                    <p>Сроки</p>
+                </div>
+                 <div class="price">
+                    <p>Стоимость</p>
+                </div>
+            </div>
         </div>
     </div>
     
-    <div class="statistic">
+    <div class="statistics">
+       <hr>
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
-        <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">     
+        <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+        
+            <div class="clients">
+                <img src="Img/smile.png" alt="">
+                <p class="number">120</p>
+                <hr>
+                <p>Счастливых клиентов</p>
+            </div>
+            
+            <div class="hours">
+                <img src="Img/brackets.png" alt="">
+                <p class="number">4,600</p>
+                <hr>
+                <p>Часов работы</p>
+            </div>
+            
+            <div class="projects_number">
+                <img src="Img/choice.png" alt="">
+                <p class="number" >340</p>
+                <hr>
+                <p>Проектов завершено</p>
+            </div>
+            
+            <div class="awards">
+               <img src="Img/achieve.png" alt="">
+               <p class="number">23</p>
+               <hr>
+               <p>Наград получено</p>
+            </div> 
+            <div class="clear"></div>  
     </div>
-    
-    <div class="feedback">
+    <div class="feedback"> <!-- я пока не оформляю до конца этот блок, так как ещё не рассматривался материал относительно написания кода для него --> 
        <h2>Отзывы</h2>
-       <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">
-
-    </div>
-    
+       <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+       <p>Lorem ipsum dolor sit amet.</p>
+       <p></p>
+    </div>   
     <div class="contacts">
+      <hr>;
        <h2>Мои контакты</h2>
-       <img src="Img/Черта заголовка.png" alt="Что-то пошло не так">
+       <img class= cherta src="Img/Черта заголовка.png" alt="Что-то пошло не так">
 
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, explicabo.</p>
-           <div class="locarion">
+          <div class="contacts_item">
+           <div class="location">
                <img src="Img/гео.png" alt="">
-               <p>Lorem ipsum.</p>
-               <p>Lorem ipsum.</p>
+               <p>Санкт-Петербург</p>
+               <p>Невский проспект 11</p>
            </div>
            <div class="email">
                <img src="Img/конверт.png" alt="">
-               <p>Lorem.</p>
+               <p>info@companyname.com</p>
            </div>
            <div class="telephone">
                <img src="Img/труба.png" alt="">
                <p>+7980XXXXXXX</p>
            </div>
-           
+           </div>
+           <div class="clear"></div>
+            <h3>Оставьте мне сообщение</h3>    
         <div class="give_massage">
-            <input type="text" name="name">
-            <input type="text" name="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="name">
+            <input type="text" name="name" placeholder="Имя">
+            </div>
+            
+                <div class="email">
+            <input type="text" name="email" placeholder="Email">
+            </div>
+                <div class="clear"></div>
+                <div class="massage">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <div class="send">
             <button>Отправить</button>
-        </div> 
+            </div>
+            </div>
+        </div>
         <div class="map">
             
         </div>
